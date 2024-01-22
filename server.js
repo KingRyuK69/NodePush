@@ -11,9 +11,10 @@ app.use(express.static(path.join(__dirname, "client")));
 
 app.use(bodyParser.json());
 
-const publicVapidKey = PUBLIC_VAPID_KEY;
+const publicVapidKey =
+  "BCtRdFGgDpPd0jRWIENJEhuhDcP3nu8izpEatoFHuTjAIGVk3DYL5Ww32ImJNvbWu9wE1O8tYFwVLccQ_w3zw5k";
 
-const privateVapidKey = process.env.PRIVATE_VAPID_KEY;
+const privateVapidKey = "jTKmHxRwN8GWLkPQTG_T75YwElaVkGAVThPr-UA5dwM";
 
 webpush.setVapidDetails(
   "mailto:sohom.neogi@shyamsteel.com",
